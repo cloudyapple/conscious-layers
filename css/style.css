@@ -52,19 +52,102 @@ table {
 
 @font-face {
     font-family: 'League Spartan';
-    src: url('leaguespartan-bold.eot');
-    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-         url('leaguespartan-bold.woff2') format('woff2'),
-         url('leaguespartan-bold.woff') format('woff'),
-         url('leaguespartan-bold.ttf') format('truetype'),
-         url('leaguespartan-bold.svg#league_spartanbold') format('svg');
+    src: url('vendor/leaguespartan-bold.eot');
+    src: url('vendor/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('vendor/leaguespartan-bold.woff2') format('woff2'),
+         url('vendor/leaguespartan-bold.woff') format('woff'),
+         url('vendor/leaguespartan-bold.ttf') format('truetype'),
+         url('vendor/leaguespartan-bold.svg#league_spartanbold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
-body {
+p {
     font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+h1, h2, h3, h4, h5, h6 {
+
 }
 h1 {
     font-size: 58px;
+    font-family: 'League Spartan', serif;
+}
+h2 {
+    font-size: 42px;
+    font-family: 'League Spartan', serif;
+}
+.cl-shadow {
+    text-shadow: 3px 3px #449995;
+}
+.block {
+    padding: 50px 0;
+    margin: 50px 0;
+}
+footer {
+    padding: 50px 0;
+    margin-top: 50px;
+}
+.cl-blue {
+    background-color: #97CECC;
+    color: #333333;
+}
+
+
+.cl-btn {
+    border: 2px solid #333333;
+    box-sizing: border-box;
+    border-radius: 1px;
+    font-family: 'League Spartan', serif;
+    font-size: 18px;
+    background: #ffffff;
+    position: ;
+    z-index: 10;
+    color: #333333;
+    position: relative;
+    padding: 15px 22px 10px 22px;
+}
+.cl-btn:hover {
+    color: #333333;
+    text-decoration: none;
+}
+a.cl-btn:after {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: -2px;
+    background-color: red;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    border: 2px solid #333333;
+    box-sizing: border-box;
+    border-radius: 1px;
+    background: #fff;
+}
+a.cl-btn:before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: 6px;
+    background-color: red;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    border: 2px solid #333333;
+    border-radius: 1px;
+    background: #F98F45;
+}
+a.cl-btn > div {
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+border: solid #333333;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border-radius: 3px;
 }
