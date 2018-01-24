@@ -225,9 +225,6 @@ transform: rotate(-45deg);
     border: 3px solid #97CECC;
     display: inline-block;
 }
-.q-text {
-
-}
 .quote-big .q-body {
     display: inline-block;
     float: left;
